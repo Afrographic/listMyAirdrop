@@ -1,0 +1,40 @@
+.imageContainer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px 12px #00000033;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.imageContainer img {
+    width: 35%;
+}
+
+.featureItem p {
+    color: rgb(126, 126, 126) !important;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.flag {
+    position: relative;
+}
+
+.fan {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.flag:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    height: 25px;
+    width: 25px;
+    background-image: url('../../assets/images/features/flag.png');
+    background-size: 100%;
+}

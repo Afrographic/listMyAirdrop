@@ -1,0 +1,129 @@
+ /* SideMenu Design */
+ 
+ .sideMenu-mobile.active {
+     left: 0;
+     opacity: 1;
+ }
+ 
+ .sideMenu-mobile {
+     z-index: 2000;
+     position: fixed;
+     top: 0;
+     left: -100vw;
+     height: 100vh;
+     background-color: #fff;
+     box-shadow: 10px 1px 20px 2px rgb(32 32 32 / 23%);
+     width: 80vw;
+     display: flex !important;
+     flex-direction: column;
+     padding: 16px;
+ }
+ 
+ .spaceWid {
+     width: 15px;
+ }
+ 
+ .sideMenu-mobile img {
+     width: 150px;
+ }
+ 
+ .menu-mobile {
+     flex: 1;
+     margin-top: 12px;
+ }
+ 
+ .line {
+     margin-top: 8px;
+     width: 100%;
+     height: 1px;
+     background-color: rgba(136, 136, 136, 0.342);
+ }
+ 
+ .menu-mobile .menuItem {
+     padding: 12px 0px;
+ }
+ 
+ .sideMenu-mobile .lastPart {
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .sideMenu-mobile .lastPart img {
+     width: 45px !important;
+ }
+ 
+ .sideMenu-mobile .regulation {
+     justify-content: center;
+ }
+ 
+ .sideMenu-mobile .regulation img {
+     width: 25px;
+     padding: 16px 0px;
+ }
+ 
+ body>div.sideMenu-mobile>div:nth-child(5) {
+     padding: 8px 0px;
+     text-align: center;
+ }
+ 
+ .topHeaderSideMenu {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ body>div.sideMenu-mobile>div.topHeaderSideMenu>img:nth-child(1) {
+     width: 35px;
+ }
+ 
+ .super_header {
+     /* font-size: 21px; */
+     color: #7d7d7d;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 8px 66px;
+ }
+ 
+ .toggleMenuMobile {
+     width: 15px;
+     display: none;
+ }
+ 
+ .AbsolutePos_shadow {
+     position: fixed;
+     width: 100vw;
+     top: 0;
+     left: 0;
+     box-shadow: 0px 15px 15px #2f2f2f2b;
+     background-color: #fff;
+     z-index: 100;
+ }
+ 
+ .super_header .logo {
+     width: 135px;
+ }
+ 
+ .menuItem strong {
+     color: #939393;
+ }
+ 
+ .menuItem {
+     padding: 0px 8px;
+     cursor: pointer;
+ }
+ 
+ .menu {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .backButton {
+     width: 30px !important;
+ }
+ 
+ #SideMenu>div:nth-child(5) {
+     text-align: center;
+     margin: 8px 0px;
+ }

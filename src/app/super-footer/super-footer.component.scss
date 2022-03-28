@@ -1,0 +1,40 @@
+.criptos {
+    display: flex;
+}
+
+.crytoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 8px;
+    font-size: 14px;
+}
+
+.crytoItem img {
+    margin-right: 8px;
+    opacity: 0.4;
+    width: 15px;
+}
+
+.logoQRB {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reseaux img {
+    width: 20px;
+    margin-left: 4px;
+}
+
+.super_footer {
+    background-color: #f0f0f0;
+    position: relative;
+    color: #D1D3D6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 66px;
+}

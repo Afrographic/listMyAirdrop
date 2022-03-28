@@ -1,0 +1,33 @@
+/* footer */
+
+.footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.super_footer {
+    background-color: #f0f0f0;
+    position: relative;
+    color: #D1D3D6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 66px;
+}
+
+.footer .footerItem {
+    flex: 1;
+}
+
+.footerItem .title {
+    font-family: 'fbold';
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.footerItem .linkItem {
+    font-size: 14px;
+    margin: 12px 0px;
+    cursor: pointer;
+}

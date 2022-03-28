@@ -1,0 +1,100 @@
+.itemRoadMapValue {
+    position: relative;
+    padding: 6px 0px;
+    padding-left: 45px;
+    opacity: 0.7;
+    color: black;
+}
+
+.spaceHig {
+    height: 35px;
+}
+
+.itemRoadMapValue:hover:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2FBAFB;
+    z-index: 2;
+}
+
+.itemRoadMapValue:hover {
+    opacity: 1;
+}
+
+.itemRoadMapValue:hover:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1C3D99;
+}
+
+.itemRoadMapValue:before {
+    transition: 0.5s;
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FCFEFE;
+    z-index: 2;
+}
+
+.itemRoadMapValue:after {
+    transition: 0.5s;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #A8A9A9;
+}
+
+.roadMapContainer .contentFaq {
+    margin-bottom: 36px;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.connect img {
+    width: 120px;
+}
+
+.connect div:last-child {
+    display: flex;
+    grid-gap: 24px;
+    opacity: 0.6;
+    align-items: center;
+}
+
+.connect div:last-child img:first-child {
+    width: 35px;
+}
+
+@media (max-width: 1000px) {
+    .videoBg video {
+        width: 112vw !important;
+    }
+}

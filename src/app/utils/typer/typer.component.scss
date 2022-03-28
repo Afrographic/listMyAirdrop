@@ -1,0 +1,17 @@
+span {
+    color: #2FBAFB;
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+}
+
+span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translate(-50%, -50%);
+    background-color: #2fbafb66;
+    width: 8px;
+    height: 45px;
+}
