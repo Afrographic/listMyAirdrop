@@ -6,3 +6,9 @@ p {
 video {
     width: 56vw;
 }
+
+@media (max-width:1000px) {
+    video {
+        width: 100vw;
+    }
+}

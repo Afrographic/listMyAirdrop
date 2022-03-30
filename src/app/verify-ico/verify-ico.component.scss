@@ -20,3 +20,12 @@
 .spaceHeigh {
     height: 15px;
 }
+
+@media (max-width: 1000px) {
+    .spaceWidth {
+        height: 35px;
+    }
+    .itemVerifyIco img {
+        width: 30vw !important;
+    }
+}

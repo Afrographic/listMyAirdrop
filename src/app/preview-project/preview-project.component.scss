@@ -93,3 +93,12 @@ h2 {
 .iconContainer img {
     width: 70%;
 }
+
+@media (max-width: 1000px) {
+    .previewContainer {
+        width: 90vw;
+    }
+    .itemContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

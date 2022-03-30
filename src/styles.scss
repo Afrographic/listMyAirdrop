@@ -578,9 +578,7 @@ body {
     .faq {
         margin-top: 16px;
     }
-    .footerItem.desktop,
-    body>app-root>div>app-super-header>div.super_header.AbsolutePos_shadow>div:nth-child(5),
-    body>app-root>div>app-footer>div.section.footer>div:nth-child(1) {
+    .footerItem.desktop {
         display: none !important;
     }
     .footerItem.mobile {
