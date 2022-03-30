@@ -16,6 +16,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { TyperComponent } from './utils/typer/typer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { PreviewProjectComponent } from './preview-project/preview-project.component';
+import { VerifyICOComponent } from './verify-ico/verify-ico.component';
+import { AudienceComponent } from './audience/audience.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PreviewProjectComponent } from './preview-project/preview-project.compo
     BodyComponent,
     DashboardComponent,
     TyperComponent,
-    PreviewProjectComponent
+    PreviewProjectComponent,
+    VerifyICOComponent,
+    AudienceComponent
   ],
   imports: [
     BrowserModule,

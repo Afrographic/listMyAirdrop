@@ -97,4 +97,13 @@
     .videoBg video {
         width: 112vw !important;
     }
+    .connect {
+        flex-direction: column !important;
+    }
+    .connect div:last-child {
+        margin-top: 24px;
+        display: grid !important;
+        grid-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

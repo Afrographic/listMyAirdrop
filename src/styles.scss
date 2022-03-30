@@ -315,6 +315,14 @@ body {
     width: 100%;
 }
 
+.spaceWidth {
+    width: 15px;
+}
+
+.spaceHeigh {
+    height: 45px;
+}
+
 .number {
     width: 25px;
     height: 25px;
@@ -491,6 +499,10 @@ body {
 /* Responsive */
 
 @media (max-width: 1000px) {
+    .CTA {
+        padding: 12px 20px !important;
+        font-size: 11px !important;
+    }
     body>app-root>div>app-dashboard>div.section.flex.white.center.fadeIn>div.leftBloc.Wrapper {
         order: 2;
     }

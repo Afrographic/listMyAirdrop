@@ -9,5 +9,87 @@ h2 {
 }
 
 .previewContainer {
+    width: 35vw;
     margin-top: 16px;
+}
+
+.logoPreview {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px #aaa;
+}
+
+.logoPreview img {
+    width: 80%;
+}
+
+.headerPreview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstChild {
+    display: flex;
+    align-items: center;
+}
+
+.EarnNASchedule {
+    display: flex;
+    align-items: center;
+}
+
+.schedule {
+    display: flex;
+    align-items: center;
+}
+
+.hot {
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(255, 51, 0);
+    color: white;
+    border-radius: 16px;
+    border-radius: 18px;
+    font-size: 11px;
+}
+
+.itemPreview {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 60px;
+    background-color: #cfcfcf78;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0);
+}
+
+.itemPreview:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 10px 12px rgb(0 0 0 / 16%);
+}
+
+.itemContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+}
+
+.iconContainer {
+    width: 25px;
+    height: 25px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+}
+
+.iconContainer img {
+    width: 70%;
 }
