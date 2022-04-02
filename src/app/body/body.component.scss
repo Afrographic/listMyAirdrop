@@ -31,16 +31,20 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: -27px;
     transform: translate(-50%, -50%);
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-image: url('../../assets/images/features/flag.png');
     background-size: 100%;
 }
 
 .textFan {
     text-align: center;
+}
+
+.section.feature {
+    grid-gap: 10vw !important;
 }
 
 @media (max-width: 1000px) {
