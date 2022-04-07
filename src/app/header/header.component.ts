@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  words = ["AirDrop","Token"];
+  words = ["NFT","Token"];
 
   constructor() { }
 
@@ -15,6 +15,5 @@ export class HeaderComponent implements OnInit {
 
   }
 
- 
 
 }

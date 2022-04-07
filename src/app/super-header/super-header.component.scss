@@ -83,7 +83,7 @@
  .super_header {
      /* font-size: 21px; */
      color: #7d7d7d;
-     font-weight: bold;
+     //  font-weight: bold;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -107,6 +107,16 @@
  
  .super_header .logo {
      width: 135px;
+ }
+ 
+ .airDropLogo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .airDropLogo strong {
+     margin-left: 38px;
  }
  
  .menuItem strong {

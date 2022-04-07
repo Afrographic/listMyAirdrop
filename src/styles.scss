@@ -136,10 +136,11 @@ body {
 }
 
 .CTA {
-    padding: 12px 36px;
+    padding: 9px 32px;
     border-radius: 50px;
     cursor: pointer;
     display: inline-block;
+    font-size: 12px;
 }
 
 .CTA1 {
@@ -226,7 +227,7 @@ body {
 }
 
 .section video {
-    width: 35vw;
+    width: 40vw;
 }
 
 .section .leftBloc {
@@ -234,7 +235,7 @@ body {
 }
 
 .Wrapper {
-    margin-right: 16vw !important;
+    margin-right: 10vw !important;
 }
 
 .section.white {
@@ -608,4 +609,8 @@ body {
     body>div>div.super_header.AbsolutePos_shadow>div:nth-child(5) {
         display: none !important;
     }
+}
+
+lp {
+    line-height: 31px;
 }

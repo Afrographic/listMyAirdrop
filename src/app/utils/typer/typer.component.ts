@@ -26,12 +26,12 @@ export class TyperComponent implements OnInit {
       let i  = word.length;
       for (const letter of word) {
         renderUI.innerHTML = `${word.substring(0,i)}`;
-        await this.sleep(300);
+        await this.sleep(100);
         i--;
       } 
       renderUI.innerHTML = '';   
       await this.sleep(300);
-    }
+    } 
     // reload animation
     this.generateAnimation();
   }

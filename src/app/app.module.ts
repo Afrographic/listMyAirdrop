@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { PreviewProjectComponent } from './preview-project/preview-project.component';
 import { VerifyICOComponent } from './verify-ico/verify-ico.component';
 import { AudienceComponent } from './audience/audience.component';
+import { AirdropVideoComponent } from './airdrop-video/airdrop-video.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AudienceComponent } from './audience/audience.component';
     TyperComponent,
     PreviewProjectComponent,
     VerifyICOComponent,
-    AudienceComponent
+    AudienceComponent,
+    AirdropVideoComponent
   ],
   imports: [
     BrowserModule,
