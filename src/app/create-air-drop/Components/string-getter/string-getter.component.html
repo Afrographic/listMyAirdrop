@@ -1,0 +1,31 @@
+<div class="chipsWrapper">
+
+
+    <div class="chipsContainer">
+        <ng-template [ngIf]="items.length > 0">
+            <div class="chipItem" *ngFor="let item of items">
+                <div>{{ item }}</div>
+                <div class="actions">
+                    <button mat-icon-button matTooltip="Edit Task" (click)="editItem(item)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button matTooltip="'remove Task" (click)="removeItem(item)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+
+            </div>
+        </ng-template>
+        <ng-template [ngIf]="items.length == 0">
+            <p>No items</p>
+        </ng-template>
+    </div>
+    <div class="inputButtonWrapper">
+        <input type="text" placeholder="Ecrivez quelque chose" [(ngModel)]="itemToInsert" />
+
+        <button mat-raised-button (click)="addItem(itemToInsert)">
+            <mat-icon>add</mat-icon>
+            Ajouter
+        </button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="avatar_wrapper" (click)="choseProfileImage()">
+    <input type="file" #hiddentInputFile hidden (change)="onFileSelected($event)" />
+
+    <!-- End Egine -->
+    <div class="avatar" [style.backgroundImage]="'url('+tempAvatar+')'">
+        <img [src]="
+        tempAvatar.length > 5
+          ? ''
+          : 'assets/images/qIcon.png'
+      " alt="" [matTooltip]="toolTip" />
+    </div>
+</div>

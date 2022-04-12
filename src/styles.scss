@@ -20,9 +20,6 @@ $Qlubdeal-theme: mat.define-light-theme(( color: ( primary: $Qlubdeal-primary, a
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($Qlubdeal-theme);
-
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
     height: 100%;
@@ -54,6 +51,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F9FDFE;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: rgba(136, 136, 136, 0.226);
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.603);
+    border-radius: 8px;
 }
 
 .footerItem.mobile,
@@ -613,4 +632,12 @@ body {
 
 lp {
     line-height: 31px;
+}
+
+.mat-form-field-wrapper {
+    padding: 0 !important;
+}
+
+.mat-raised-button.mat-primary {
+    background-color: #2BB9FB;
 }

@@ -1,6 +1,6 @@
 
 
-export function isInViewport(el:any) {
+export function isInViewport(el: any) {
     const rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&
@@ -10,3 +10,9 @@ export function isInViewport(el:any) {
 
     );
 }
+
+export function sleep(ms: any) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+

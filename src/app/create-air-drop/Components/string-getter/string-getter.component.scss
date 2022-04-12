@@ -1,0 +1,87 @@
+.chipsWrapper {
+    padding: 24px;
+    margin-bottom: 31px;
+    border: 1px solid #aaaaaa59;
+    //   width: 97.5%;
+    border-radius: 4px;
+}
+
+.chipsContainer {
+    padding: 12px;
+    display: grid;
+    grid-gap: 10px;
+    max-width: 800px;
+    margin: 15px auto;
+    //grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
+    transition: 0.5s;
+}
+
+.chipsContainer input {
+    border: none;
+    background-color: transparent;
+}
+
+.chipItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: open 1s ease-in 1;
+    background-color: #efefef;
+    border-radius: 8px;
+}
+
+.chipItem div {
+    margin-left: 8px;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        max-height: 0px;
+    }
+    100% {
+        opacity: 1;
+        max-height: 100px;
+    }
+}
+
+.inputButtonWrapper {
+    display: flex;
+    border-top: 1px solid #aaaaaa78;
+    padding-top: 15px;
+}
+
+.inputButtonWrapper input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+.inputButtonWrapper .AddItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b594467;
+    color: #2b5944;
+    border-radius: 48px;
+}
+
+.chipItem button {
+    // background-color: #6b6b6b4a;
+    margin-left: 10px;
+    transform: scale(0.7);
+}
+
+@media (max-width: 1000px) {
+    .chipsWrapper {
+        width: 100%;
+    }
+    .chipsWrapper input {
+        width: 50px;
+    }
+}

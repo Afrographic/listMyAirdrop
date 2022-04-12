@@ -1,0 +1,33 @@
+.checkBoxWrapper {
+    display: flex;
+    grid-gap: 16px;
+}
+
+.checkBoxItem {
+    padding: 10px 24px;
+    background-color: #9797974f;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.checkBoxItem mat-icon {
+    margin-right: 0px;
+    display: none;
+}
+
+.checkBoxItem.active {
+    background-color: #38BDFB;
+    color: white;
+}
+
+.checkBoxItem.active mat-icon {
+    margin-right: 4px;
+    display: block !important;
+}
+
+.checkBoxItem:hover {
+    opacity: 0.7;
+}

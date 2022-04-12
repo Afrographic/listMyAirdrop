@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { sleep } from 'src/app/constant';
 
 @Component({
   selector: 'app-typer',
@@ -19,26 +20,24 @@ export class TyperComponent implements OnInit {
       // revealing the word
       for (const letter of word) {
         renderUI.innerHTML += letter;
-        await this.sleep(300);
+        await sleep(300);
       }
-      await this.sleep(1300); 
+      await sleep(1300); 
       // deleting the word
       let i  = word.length;
       for (const letter of word) {
         renderUI.innerHTML = `${word.substring(0,i)}`;
-        await this.sleep(100);
+        await sleep(100);
         i--;
       } 
       renderUI.innerHTML = '';   
-      await this.sleep(300);
+      await sleep(300);
     } 
     // reload animation
     this.generateAnimation();
   }
 
 
-  sleep(ms: any) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
+  
 
 }

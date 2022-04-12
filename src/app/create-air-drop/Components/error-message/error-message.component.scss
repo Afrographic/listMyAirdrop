@@ -1,0 +1,27 @@
+.errorBox {
+    background-color: rgba(255, 0, 0, 0.068);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    // inactive-State
+    opacity: 0;
+    max-height: 0;
+}
+
+.errorBox.error_active {
+    opacity: 1;
+    max-height: 100px;
+    margin: 8px 0px;
+    padding: 8px;
+}
+
+.errorBox span {
+    display: block;
+    margin-left: 8px;
+    color: rgb(39, 39, 39);
+    font-size: 11px;
+}
+
+.errorBox mat-icon {
+    color: red;
+}
