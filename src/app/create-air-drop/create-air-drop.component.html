@@ -57,7 +57,7 @@
                 <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
                 <div class="questionTitle">Do you ask Airdrop Hunters to fill up a KYC ?</div>
                 <br>
-                <app-checkbox (change)="getAirDropHuntersResponse($event)"></app-checkbox>
+                <app-checkbox (change)="getAirDropHuntersResponse($event)" [prop]="['Yes','No']"></app-checkbox>
                 <app-error-message [message]="'Email Invalide'" [error_active]="false">
                 </app-error-message>
             </div>
@@ -123,7 +123,7 @@
                 <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
                 <div class="questionTitle">Do you want to a Quiz to your tasks wall?</div>
                 <br>
-                <app-checkbox (change)="getAirDropHuntersResponse($event)"></app-checkbox>
+                <app-checkbox (change)="getAirDropHuntersResponse($event)" [prop]="['Yes','No']"></app-checkbox>
                 <app-error-message [message]="'Email Invalide'" [error_active]="false">
                 </app-error-message>
             </div>
@@ -145,7 +145,34 @@
                 <app-error-message [message]="'Email Invalide'" [error_active]="false">
                 </app-error-message>
             </div>
-
+            <div class="questionItem" *ngIf="currentQuestion == 14">
+                <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
+                <div class="questionTitle">Upload your WhitePaper
+                </div>
+                <br>
+                <app-file-upload-component [toolTip]="'Your WhitePaper'" (outputFile)="getWhitePaper($event)"></app-file-upload-component>
+                <app-error-message [message]="'Email Invalide'" [error_active]="false">
+                </app-error-message>
+            </div>
+            <div class="questionItem" *ngIf="currentQuestion == 15">
+                <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
+                <div class="questionTitle">How would you like your Airdrop to be listed?</div>
+                <br>
+                <app-checkbox (change)="getAirDropHuntersResponse($event)" [prop]="['Regular Listing','110 USD']"></app-checkbox>
+                <app-error-message [message]="'Email Invalide'" [error_active]="false">
+                </app-error-message>
+            </div>
+            <div class="questionItem" *ngIf="currentQuestion == 16">
+                <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
+                <div class="questionTitle">On which email address shall we send you the information to finalize your order?</div>
+                <br>
+                <mat-form-field appearance="outline" [class.error_field]="false">
+                    <mat-label> Email adress to finalize</mat-label>
+                    <input matInput [(ngModel)]="airDropData.name" />
+                </mat-form-field>
+                <app-error-message [message]="'Email Invalide'" [error_active]="false">
+                </app-error-message>
+            </div>
         </div>
         <div class="footerAirdrop">
             <button mat-raised-button *ngIf="currentQuestion > 1" (click)="previous()">Precedent</button>

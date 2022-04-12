@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 
 @Component({
@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class CheckboxComponent implements OnInit {
   @Output() change = new EventEmitter();
+  @Input() prop:string[] = [];
   choice: any = null;
   constructor() { }
 

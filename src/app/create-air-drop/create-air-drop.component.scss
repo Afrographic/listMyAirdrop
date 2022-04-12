@@ -46,6 +46,7 @@ h2 {
     padding: 16px;
     margin: 32px 0px;
     max-height: 70vh;
+    min-height: 20vh;
     overflow: auto;
     padding: 0 24px;
     background-color: #fff;
@@ -100,7 +101,6 @@ mat-form-field {
 }
 
 .footerAirdrop {
-    margin-top: 12px;
     display: flex;
     justify-content: flex-end;
     grid-gap: 12px;

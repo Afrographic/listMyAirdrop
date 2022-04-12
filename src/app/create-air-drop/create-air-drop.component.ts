@@ -28,7 +28,7 @@ export class CreateAirDropComponent implements OnInit {
   errorListingType = false;
   errorEmailToFinalizeOrder = false;
   // Question State
-  currentQuestion = 13;
+  currentQuestion = 1;
   totalQuestions = 16;
   // Animation state
   swipeLeftOpen = false;
@@ -92,6 +92,10 @@ export class CreateAirDropComponent implements OnInit {
 
   getAirDropHuntersResponse(choice:any){
     console.log(choice);
+  }
+
+  getWhitePaper(whitePaper:File){
+    console.log(whitePaper);
   }
 
 }

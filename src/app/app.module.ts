@@ -30,7 +30,8 @@ import { CheckboxComponent } from './create-air-drop/Components/checkbox/checkbo
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { StringGetterComponent } from './create-air-drop/Components/string-getter/string-getter.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { ImagePreviewComponent } from './create-air-drop/components/image-preview/image-preview.component';
+import { ImagePreviewComponent } from './create-air-drop/Components/image-preview/image-preview.component';
+import { FileUploadComponentComponent } from './create-air-drop/Components/file-upload-component/file-upload-component.component';
 
 
  
@@ -60,6 +61,7 @@ import { ImagePreviewComponent } from './create-air-drop/components/image-previe
     CheckboxComponent,
     StringGetterComponent,
     ImagePreviewComponent,
+    FileUploadComponentComponent
   ],
   imports: [
     BrowserModule,

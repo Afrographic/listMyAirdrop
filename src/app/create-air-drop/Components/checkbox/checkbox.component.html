@@ -1,10 +1,10 @@
 <div class="checkBoxWrapper">
     <div class="checkBoxItem" (click)="choose(true)" [class.active]="choice == true">
         <mat-icon>check</mat-icon>
-        YES
+        {{prop[0]}}
     </div>
     <div class="checkBoxItem" (click)="choose(false)" [class.active]="choice == false">
         <mat-icon>check</mat-icon>
-        NO
+        {{prop[1]}}
     </div>
 </div>

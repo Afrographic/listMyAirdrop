@@ -1,0 +1,17 @@
+<div [class]="
+    filename.length > 0
+      ? 'form_section fileUpload imported'
+      : 'form_section fileUpload empty'
+  " (click)="choseFile()" [matTooltip]="toolTip">
+    <input type="file" hidden #file (change)="getFile($event)" />
+
+    <ng-template [ngIf]="filename.length == 0">
+        <mat-icon>article</mat-icon>
+        <span>importer {{ toolTip }}</span>
+    </ng-template>
+
+    <ng-template [ngIf]="filename.length > 0">
+        <mat-icon>done</mat-icon>
+        <span>{{ toolTip }} : {{ filename }}</span>
+    </ng-template>
+</div>
