@@ -1,29 +1,30 @@
 <div class="chipsWrapper">
-
-
     <div class="chipsContainer">
-        <ng-template [ngIf]="items.length > 0">
+
+        <ng-template [ngIf]="items!.length > 0">
             <div class="chipItem" *ngFor="let item of items">
                 <div>{{ item }}</div>
                 <div class="actions">
                     <button mat-icon-button matTooltip="Edit Task" (click)="editItem(item)">
                         <mat-icon>edit</mat-icon>
                     </button>
-                    <button mat-icon-button matTooltip="'remove Task" (click)="removeItem(item)">
+                    <button mat-icon-button matTooltip="'remove Task" (click)="removeItemProxy(item)">
                         <mat-icon>delete</mat-icon>
                     </button>
                 </div>
 
             </div>
         </ng-template>
-        <ng-template [ngIf]="items.length == 0">
+        <ng-template [ngIf]="items!.length == 0">
             <p>No items</p>
         </ng-template>
     </div>
+    <app-error-message [message]="'Invalid link'" [error_active]="link_error">
+    </app-error-message>
     <div class="inputButtonWrapper">
-        <input type="text" placeholder="Ecrivez quelque chose" [(ngModel)]="itemToInsert" />
+        <input type="text" placeholder="Write something" [(ngModel)]="itemToInsert" />
 
-        <button mat-raised-button (click)="addItem(itemToInsert)">
+        <button mat-raised-button (click)="addItemProxy()">
             <mat-icon>add</mat-icon>
             Ajouter
         </button>

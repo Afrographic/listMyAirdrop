@@ -1,0 +1,47 @@
+<div class="addTaskWrapper">
+
+    <div class="taskContainer">
+        <div class="taskItem" *ngFor="let task of tasks">
+            <div class="details">
+                <div class="title">{{task.title}}
+                </div>
+                <div class="link">{{task.link}}
+                </div>
+            </div>
+            <div class="actions">
+                <button mat-icon-button matTooltip="Edit" (click)="editTask(task)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Delete" (click)="deleteTask(task)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <ng-template [ngIf]="tasks!.length == 0">
+        <p class="noItems">No items</p>
+    </ng-template>
+    <app-error-message [message]="'This task already exist'" [error_active]="!keyUnique"></app-error-message>
+    <app-error-message [message]="'Please input the task title'" [error_active]="title_error">
+    </app-error-message>
+    <app-error-message [message]="'Invalid link'" [error_active]="link_error">
+    </app-error-message>
+    <div class="fields">
+        <mat-form-field appearance="outline">
+            <mat-label>Title</mat-label>
+            <input matInput [(ngModel)]="title" (keyup)="saveWithEnterKey($event)">
+        </mat-form-field>
+        <div class="valeurWrapper">
+            <mat-form-field appearance="outline">
+                <mat-label>Link</mat-label>
+                <input matInput [(ngModel)]="link" (keyup)="saveWithEnterKey($event)">
+            </mat-form-field>
+            <button mat-icon-button mat-raised-button matTooltip="Add" (click)="saveTaskProxy()">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+
+    </div>
+</div>

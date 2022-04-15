@@ -1,0 +1,66 @@
+.fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    align-items: center;
+}
+
+.fields mat-form-field {
+    flex: 1;
+}
+
+.valeurWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.valeurWrapper mat-form-field {
+    flex: 1;
+}
+
+.valeurWrapper button {
+    margin-left: 8px;
+}
+
+.propsAdded tr th:last-child {
+    text-align: center;
+}
+
+.propsAdded tr td:last-child {
+    text-align: center;
+}
+
+.noItems {
+    text-align: center;
+    color: grey;
+}
+
+.addTaskWrapper {}
+
+.title {
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.781);
+    margin-bottom: 8px;
+}
+
+.taskItem {
+    border: 1px solid #aaaaaa42;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0px;
+}
+
+.taskItem {
+    display: flex;
+}
+
+.details {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #aaaaaa59;
+    margin-left: 16px;
+}

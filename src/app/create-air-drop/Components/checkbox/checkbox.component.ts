@@ -9,7 +9,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class CheckboxComponent implements OnInit {
   @Output() change = new EventEmitter();
   @Input() prop:string[] = [];
-  choice: any = null;
+  @Input() choice: any = null;
   constructor() { }
 
   ngOnInit(): void {

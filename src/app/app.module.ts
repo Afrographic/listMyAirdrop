@@ -32,6 +32,10 @@ import { StringGetterComponent } from './create-air-drop/Components/string-gette
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ImagePreviewComponent } from './create-air-drop/Components/image-preview/image-preview.component';
 import { FileUploadComponentComponent } from './create-air-drop/Components/file-upload-component/file-upload-component.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { AirdropCreatorComponent } from './create-air-drop/Components/airdrop-creator/airdrop-creator.component';
+import { AddTaskComponent } from './create-air-drop/Components/add-task/add-task.component';
+
 
 
  
@@ -61,7 +65,9 @@ import { FileUploadComponentComponent } from './create-air-drop/Components/file-
     CheckboxComponent,
     StringGetterComponent,
     ImagePreviewComponent,
-    FileUploadComponentComponent
+    FileUploadComponentComponent,
+    AirdropCreatorComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +80,8 @@ import { FileUploadComponentComponent } from './create-air-drop/Components/file-
     FormsModule,
     MatInputModule,
     MatSnackBarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

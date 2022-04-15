@@ -155,11 +155,10 @@ body {
 }
 
 .CTA {
-    padding: 9px 32px;
+    padding: 18px 32px;
     border-radius: 50px;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
 }
 
 .CTA1 {
@@ -641,3 +640,20 @@ lp {
 .mat-raised-button.mat-primary {
     background-color: #2BB9FB;
 }
+
+.mat-progress-bar-fill::after {
+    background-color: #1F3F9B !important;
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// Error Input fields
