@@ -35,7 +35,7 @@ export class AirdropCreatorComponent implements OnInit {
   errorListingType = false;
   errorEmailToFinalizeOrder = false;
   // Question State
-  currentQuestion = 16;
+  currentQuestion = 1;
   totalQuestions = 16;
   // Animation state
   swipeLeftOpen = false;
@@ -44,6 +44,9 @@ export class AirdropCreatorComponent implements OnInit {
   swipeRightClose = false;
   saving = false;
   lazyLoadActive = false;
+
+
+
 
 
 
@@ -66,8 +69,39 @@ export class AirdropCreatorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   
+    this.nextWithEnterKey();
+    this.nextWithdirectionKey();
+    this.previousWithdirectionKey();
   }
+
+  nextWithEnterKey() {
+    let that = this;
+    document.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        that.next(that.currentQuestion);
+      }
+    });
+  }
+  nextWithdirectionKey() {
+    const RightKeyCode = 39;
+    let that = this;
+    document.addEventListener("keyup", function (event) {
+      if (event.keyCode === RightKeyCode) {
+        that.next(that.currentQuestion);
+      }
+    });
+  }
+  previousWithdirectionKey() {
+    const LeftKeyCode = 37;
+    let that = this;
+    document.addEventListener("keyup", function (event) {
+      if (event.keyCode === LeftKeyCode) {
+        if (that.currentQuestion > 1)
+          that.previous();
+      }
+    });
+  }
+
 
   async transitionNext() {
     this.lazyLoadActive = true;
