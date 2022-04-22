@@ -46,11 +46,6 @@ export class AirdropCreatorComponent implements OnInit {
   lazyLoadActive = false;
 
 
-
-
-
-
-
   setClasses() {
     return {
       'swipeLeftOpen': this.swipeLeftOpen,

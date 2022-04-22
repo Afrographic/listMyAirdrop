@@ -13,6 +13,9 @@
         </div>
 
         <div class="airDropQuestionArea" [ngClass]="setClasses()">
+            <div class="questionItem" *ngIf="currentQuestion == 0">
+                <app-account></app-account>
+            </div>
             <div class="questionItem" *ngIf="currentQuestion == 1">
                 <div class="questionNumber">Question {{currentQuestion}}/{{totalQuestions}}</div>
                 <div class="questionTitle">What is the name of your Airdrop ?</div>
@@ -181,8 +184,9 @@
             <ng-template [ngIf]="currentQuestion <= 16">
                 <button mat-raised-button *ngIf="currentQuestion > 1" (click)="previous()">Precedent</button>
                 <button mat-raised-button color="primary" (click)="next(currentQuestion)">{{currentQuestion == 16 ?
-                    'Creer mon Airdrop':'Suivant'}}</button>
+                    'Creer mon Airdrop':'Next'}}</button>
+
             </ng-template>
         </div>
-    </div>
+    </div>0
 </div>

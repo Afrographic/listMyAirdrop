@@ -35,10 +35,14 @@ import { FileUploadComponentComponent } from './create-air-drop/Components/file-
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AirdropCreatorComponent } from './create-air-drop/Components/airdrop-creator/airdrop-creator.component';
 import { AddTaskComponent } from './create-air-drop/Components/add-task/add-task.component';
+import { LoginComponent } from './create-air-drop/Components/account/login/login.component';
+import { RegisterComponent } from './create-air-drop/Components/account/register/register.component';
+import { AccountComponent } from './create-air-drop/components/account/account.component';
+import { PositiveMessageComponent } from './create-air-drop/Components/positive-message/positive-message.component';
 
 
 
- 
+
 
 
 
@@ -67,7 +71,11 @@ import { AddTaskComponent } from './create-air-drop/Components/add-task/add-task
     ImagePreviewComponent,
     FileUploadComponentComponent,
     AirdropCreatorComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    LoginComponent,
+    RegisterComponent,
+    AccountComponent,
+    PositiveMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +84,7 @@ import { AddTaskComponent } from './create-air-drop/Components/add-task/add-task
     AnimateOnScrollModule.forRoot(),
     MatButtonModule,
     MatDividerModule,
-    MatFormFieldModule ,
+    MatFormFieldModule,
     FormsModule,
     MatInputModule,
     MatSnackBarModule,
